@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/menuModelsFragment">
+
+    <fragment
+        android:id="@+id/zonesMenuFragment"
+        android:name="com.example.planpacifico.ui.zones.ZonesMenuFragment"
+        android:label="fragment_zones_menu"
+        tools:layout="@layout/fragment_zones_menu" >
+        <action
+            android:id="@+id/action_zonesMenuFragment_to_zonesFormCreateFragment"
+            app:destination="@id/zonesFormCreateFragment" />
+        <action
+            android:id="@+id/action_zonesMenuFragment_to_zonesFormUpdateFragment"
+            app:destination="@id/zonesFormUpdateFragment" />
+        <action
+            android:id="@+id/action_zonesMenuFragment_to_menuModelsFragment"
+            app:destination="@id/menuModelsFragment" />
+        <action
+            android:id="@+id/action_zonesMenuFragment_self"
+            app:destination="@id/zonesMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zonesFormCreateFragment"
+        android:name="com.example.planpacifico.ui.zones.ZonesFormCreateFragment"
+        android:label="fragment_zones_form_create"
+        tools:layout="@layout/fragment_zones_form_create" >
+        <action
+            android:id="@+id/action_zonesFormCreateFragment_to_menuModelsFragment"
+            app:destination="@id/menuModelsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zonesFormUpdateFragment"
+        android:name="com.example.planpacifico.ui.zones.ZonesFormUpdateFragment"
+        android:label="fragment_zones_form_update"
+        tools:layout="@layout/fragment_zones_form_update" >
+        <argument android:name="ppmObject"
+            app:argType="com.example.planpacifico.data.models.entities.PopulationAndPopulatedCenterAndMunicipality" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuModelsFragment"
+        android:name="com.example.planpacifico.ui.modules.MenuModelsFragment"
+        android:label="fragment_menu_models"
+        tools:layout="@layout/fragment_menu_models" >
+        <action
+            android:id="@+id/action_menuModelsFragment_to_analyzeWaterFragment"
+            app:destination="@id/analyzeWaterFragment" />
+        <argument
+            android:name="ppmObject"
+            app:argType="com.example.planpacifico.data.models.entities.PopulationAndPopulatedCenterAndMunicipality" />
+        <action
+            android:id="@+id/action_menuModelsFragment_to_architectureModuleFragment"
+            app:destination="@id/architectureModuleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/analyzeWaterFragment"
+        android:name="com.example.planpacifico.ui.modules.water.AnalyzeWaterFragment"
+        android:label="fragment_analyze_water"
+        tools:layout="@layout/fragment_analyze_water" >
+        <argument
+            android:name="ppmObject"
+            app:argType="com.example.planpacifico.data.models.entities.PopulationAndPopulatedCenterAndMunicipality" />
+    </fragment>
+    <fragment
+        android:id="@+id/architectureModuleFragment"
+        android:name="com.example.planpacifico.ui.modules.architecture.ArchitectureModuleFragment"
+        android:label="fragment_architecture_module"
+        tools:layout="@layout/fragment_architecture_module" >
+        <action
+            android:id="@+id/action_architectureModuleFragment_to_characterizationFragment"
+            app:destination="@id/characterizationFragment" />
+        <action
+            android:id="@+id/action_architectureModuleFragment_to_observationFragment"
+            app:destination="@id/observationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterizationFragment"
+        android:name="com.example.planpacifico.ui.modules.architecture.characterization.CharacterizationFragment"
+        android:label="fragment_characterization"
+        tools:layout="@layout/fragment_characterization" >
+        <action
+            android:id="@+id/action_characterizationFragment_to_characterizeFragment2"
+            app:destination="@id/characterizeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/observationFragment"
+        android:name="com.example.planpacifico.ui.modules.architecture.observation.ObservationFragment"
+        android:label="fragment_observation"
+        tools:layout="@layout/fragment_observation" >
+        <action
+            android:id="@+id/action_observationFragment_to_menuModelsFragment"
+            app:destination="@id/menuModelsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterizeFragment2"
+        android:name="com.example.planpacifico.ui.modules.architecture.characterization.CharacterizeFragment2"
+        android:label="CharacterizeFragment2" >
+        <action
+            android:id="@+id/action_characterizeFragment2_to_menuModelsFragment"
+            app:destination="@id/menuModelsFragment" />
+    </fragment>
+</navigation>

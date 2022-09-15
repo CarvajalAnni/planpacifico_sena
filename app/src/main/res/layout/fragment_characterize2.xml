@@ -1,0 +1,2455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.modules.architecture.characterization.CharacterizeFragment2">
+
+    <ScrollView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="203dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginGlobal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DIMENSION FISICA DE LA VIVIENDA "
+                android:textAlignment="center"
+                android:textColor="@color/orangeSena"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/pregunta18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregunta18"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgSexo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/si18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="@color/graySenaVariant"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/no18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textColor="@color/graySenaVariant"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta18"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/pregunta19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preguntas19_moduloCharacterize"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res191"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guayacan19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res192"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/genen19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res193"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mangle19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res194"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/amargo19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res195"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/machere19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res196"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guait19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res197"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chonta19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res198"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/palo_mulato19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res199"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tangare19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1910"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aceite_maria19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1911"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/comino19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1912"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/peine_mono19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1913"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jigua_negro19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1914"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/querre19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1915"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chachajo19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1916"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chachajillo19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res1917"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/quinde19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1918"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nalde19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1919"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guabo19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1920"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guadua19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1921"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sajo19"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res1922"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No sabe"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/ch19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cual19"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="¿Cuál?"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="gone"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Cual"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta19"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/preginta20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <TextView
+                    android:layout_width="393dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/pregunta20"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.461"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="12dp" />
+
+                <LinearLayout
+                    android:layout_width="392dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtancho"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="267dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/marginStartGlobal"
+                            android:layout_marginTop="@dimen/marginTopGlobal"
+                            android:layout_marginEnd="@dimen/marginStartGlobal"
+                            android:alpha=".6"
+                            android:background="@color/purple_500"
+                            android:hint="Ancho"
+                            android:textColorHint="@color/blueDarkSena"
+                            android:visibility="visible"
+                            app:boxBackgroundMode="outline"
+                            app:endIconMode="clear_text"
+                            app:hintTextColor="@color/blueDarkSena"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ancho"
+                                android:layout_width="265dp"
+                                android:layout_height="53dp"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtlargo"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="267dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/marginStartGlobal"
+                            android:layout_marginTop="@dimen/marginTopGlobal"
+                            android:layout_marginEnd="@dimen/marginStartGlobal"
+                            android:alpha=".6"
+                            android:background="@color/purple_500"
+                            android:hint="Largo"
+                            android:textColorHint="@color/blueDarkSena"
+                            android:visibility="visible"
+                            app:boxBackgroundMode="outline"
+                            app:endIconMode="clear_text"
+                            app:hintTextColor="@color/blueDarkSena"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/Largo"
+                                android:layout_width="265dp"
+                                android:layout_height="53dp"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtarea"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="267dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/marginStartGlobal"
+                            android:layout_marginTop="@dimen/marginTopGlobal"
+                            android:layout_marginEnd="@dimen/marginStartGlobal"
+                            android:alpha=".6"
+                            android:background="@color/purple_500"
+                            android:hint="Área"
+                            android:textColorHint="@color/blueDarkSena"
+                            android:visibility="visible"
+                            app:boxBackgroundMode="outline"
+                            app:endIconMode="clear_text"
+                            app:hintTextColor="@color/blueDarkSena"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/area"
+                                android:layout_width="265dp"
+                                android:layout_height="53dp"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/preginta20"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/preguinta21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <TextView
+                    android:layout_width="393dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/pregutna22"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.461"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="12dp" />
+
+
+                <LinearLayout
+                    android:layout_width="392dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtancho1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="267dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/marginStartGlobal"
+                            android:layout_marginTop="@dimen/marginTopGlobal"
+                            android:layout_marginEnd="@dimen/marginStartGlobal"
+                            android:alpha=".6"
+                            android:background="@color/purple_500"
+                            android:hint="Ancho"
+                            android:textColorHint="@color/blueDarkSena"
+                            android:visibility="visible"
+                            app:boxBackgroundMode="outline"
+                            app:endIconMode="clear_text"
+                            app:hintTextColor="@color/blueDarkSena"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ancho1"
+                                android:layout_width="265dp"
+                                android:layout_height="53dp"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtlargo1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="267dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/marginStartGlobal"
+                            android:layout_marginTop="@dimen/marginTopGlobal"
+                            android:layout_marginEnd="@dimen/marginStartGlobal"
+                            android:alpha=".6"
+                            android:background="@color/purple_500"
+                            android:hint="Largo"
+                            android:textColorHint="@color/blueDarkSena"
+                            android:visibility="visible"
+                            app:boxBackgroundMode="outline"
+                            app:endIconMode="clear_text"
+                            app:hintTextColor="@color/blueDarkSena"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/Largo1"
+                                android:layout_width="265dp"
+                                android:layout_height="53dp"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtarea1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="267dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/marginStartGlobal"
+                            android:layout_marginTop="@dimen/marginTopGlobal"
+                            android:layout_marginEnd="@dimen/marginStartGlobal"
+                            android:alpha=".6"
+                            android:background="@color/purple_500"
+                            android:hint="Área"
+                            android:textColorHint="@color/blueDarkSena"
+                            android:visibility="visible"
+                            app:boxBackgroundMode="outline"
+                            app:endIconMode="clear_text"
+                            app:hintTextColor="@color/blueDarkSena"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/area1"
+                                android:layout_width="265dp"
+                                android:layout_height="53dp"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/preguinta21"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:id="@+id/pregunta22"
+                android:layout_width="394dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line5"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:text="@string/preguinta22"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgpropie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/si22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="@color/graySenaVariant"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/no22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:text="No"
+                        android:textColor="@color/graySenaVariant"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta22"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/pregitna23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="52dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line6"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <TextView
+                    android:layout_width="393dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:text="23. ¿Que animales Crian?"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="9dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res23pri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gallinas23"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res23a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/conejos23"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res23b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/patos23"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/ch23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res23c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pavos23"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res23d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/codornices23"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res23e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/peces23"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cual23"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="@string/otro_cual"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="gone"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/otro3"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line7"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="48dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregitna23"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/preginta24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line7"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-16dp">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="393dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/plantas24"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.692"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="6dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/aqui24"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="@string/escriba_aqui_si_texto24"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="visible"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/aqui24l"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line8"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/preginta24"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:id="@+id/pregunta25"
+                android:layout_width="390dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line8"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="393dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preginta25"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/discapacidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/si25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="@color/graySenaVariant"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/no25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:text="No"
+                        android:textColor="@color/graySenaVariant"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line9"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta25"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:id="@+id/pregunta26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line9"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <TextView
+                    android:layout_width="393dp"
+                    android:layout_height="36dp"
+                    android:text="@string/preguinta26"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="1967dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="89dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/res26_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="19dp"
+                                android:text="@string/auditiva26"
+                                android:textColor="@color/graySenaVariant"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/res26_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="19dp"
+                                android:text="@string/visual26"
+                                android:textColor="@color/graySenaVariant"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/res26_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="19dp"
+                                android:text="@string/sordocerguera26"
+                                android:textColor="@color/graySenaVariant"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/res26_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="19dp"
+                                android:text="@string/cognitiva26"
+                                android:textColor="@color/graySenaVariant"
+                                android:textStyle="bold" />
+
+
+                            <RadioButton
+                                android:id="@+id/res26_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="19dp"
+                                android:text="@string/discapacidad_fisica_neurologica_congenita_adquirida26"
+                                android:textColor="@color/graySenaVariant"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/res26_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="19dp"
+                                android:text="Discapacidad intelectual"
+                                android:textColor="@color/graySenaVariant"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/res26_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="19dp"
+                                android:text="Discapacidad Psicosocial(mental)"
+                                android:textColor="@color/graySenaVariant"
+                                android:textStyle="bold" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line10"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta26"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:id="@+id/preguinta27"
+                android:layout_width="395dp"
+                android:layout_height="111dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line10"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="472dp"
+                    android:layout_height="53dp"
+                    android:text="@string/preginta27"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/discapacidades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/si27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="@color/graySenaVariant"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/no27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:text="No"
+                        android:textColor="@color/graySenaVariant"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line11"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/preguinta27"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/pregunta28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line11"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-16dp">
+
+
+                <TextView
+
+                    android:layout_width="393dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/preguintas28"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="9dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res28pri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gas_domiiliario28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res28a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/energ_a_publica28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res28b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/agua_potable28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res28c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/alcantarillado28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res28d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/internet28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res28e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ninguno28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line12"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta28"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/pregunta29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line12"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-16dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/pregunta29"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line12"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="9dp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout15"
+                    android:layout_width="421dp"
+                    android:layout_height="214dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res29pri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/del_acueducto_publico29"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res29a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aguas_lluvias29"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res29b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rio"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res29c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/manantial29"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res29d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/quebrada29"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res29e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/carro_tanque29"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res29f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pozo_subterraneas"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res29g"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/por_condensacion29"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/ch29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cual29"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="@string/otro_cual"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="gone"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/aqui29l"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line13"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta29"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/pregunta30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/line13"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-16dp">
+
+
+                <TextView
+                    android:layout_width="393dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/_30_que_tipo_de_combustible_usan_para_cocinar"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="9dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res30pri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ch30"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res30a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gas_domiciliario29"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res30b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pipa_de_gas"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res30c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/carbon"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+
+                        <CheckBox
+                            android:id="@+id/res30d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/energia_electronica"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res30e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petroleo30"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/res30f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gasolina"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/ch30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cual30"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="@string/otro_cual"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="gone"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/aqui30l"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line14"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta30"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:id="@+id/pregunta31"
+                android:layout_width="394dp"
+                android:layout_height="242dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line14"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:text="@string/residuos31"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="9dp" />
+
+                <LinearLayout
+                    android:layout_width="355dp"
+                    android:layout_height="182dp"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res31pri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/la_empresa_publica_los_retira"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res31a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/se_entierran"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res31b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/los_retiran_en_carreta_o_corretilla"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res31c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/se_queman"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="183dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+
+                        <CheckBox
+                            android:id="@+id/res31d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fabrican_compostaje_con_ellos"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res31e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/los_arrojan_al_rio_mar_quebrada_o_ca_o"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/res31f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/noseretira31"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/ch31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cual31"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="@string/otro_cual"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="gone"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/aqui31l"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line15"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta31"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/pregunta32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line15"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-16dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/pregunta32"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="9dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res32pri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res32a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/television_publica"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res32b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/televisi_n_satelital"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res32c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/internet32"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+
+                        <CheckBox
+                            android:id="@+id/res32d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/telefono32"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res32e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/telefonia_fija"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/res32f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ninguno28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/ch32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cual32"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="@string/otro_cual"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="gone"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/aqui32l"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line16"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta32"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TITULO2"
+                android:textAlignment="center"
+                android:textColor="@color/orangeSena"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/line16" />
+
+
+            <LinearLayout
+                android:id="@+id/pregunta33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/title2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-16dp">
+
+
+                <TextView
+                    android:layout_width="393dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/padece_los_siguientes_problemas_sanitarios"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="9dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res33pri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/malolor"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res33a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/basura_alrededor"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res33b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/abundancia_de_mosquitos"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res33c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aguas_estancadas"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+
+                        <CheckBox
+                            android:id="@+id/res33d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contaminacion_de_las_funetes_hidricas"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res33e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/por_vertimientos"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/res33f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ninguno28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/ch33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cual33"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="@string/otro_cual"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="gone"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/aqui33l"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line17"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta33"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/pregunta34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line17"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <TextView
+                    android:layout_width="393dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/_34_cuenta_con_los_siguientes_tipos_de_sistemas_de_saneamiento"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="9dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+
+                        <CheckBox
+                            android:id="@+id/res34pri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/red_alcantarillado"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res34a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pozo_septico"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/res34b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ninguno28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+
+                            android:id="@+id/ch34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cual34"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="@string/otro_cual"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="gone"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/aqui34l"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line18"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta34"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/pregunta35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/line18"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-16dp">
+
+
+                <TextView
+                    android:layout_width="485dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/_35_cuenta_con_la_siguiente_infraestructura_de_servicio"
+                    android:textColor="@color/blueDarkSena"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="9dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp">
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/res35pri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/agua_potable"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res35a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recoleccion_de_desechos"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res35b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/calles_accesos_aceras"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res35c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/unidad_de_tratamineto_de_basuras_utb"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="182dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+
+                        <CheckBox
+                            android:id="@+id/res35d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/unidad_de_aprovechamiento_de_residuos_uar"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/res35e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ninguno28"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                        <CheckBox
+                            android:id="@+id/ch35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other"
+                            android:textColor="@color/graySenaVariant"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cual35"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/marginStartGlobal"
+                    android:layout_marginTop="@dimen/marginTopGlobal"
+                    android:layout_marginEnd="@dimen/marginStartGlobal"
+                    android:alpha=".6"
+                    android:background="@color/purple_500"
+                    android:hint="@string/otro_cual"
+                    android:textColorHint="@color/blueDarkSena"
+                    android:visibility="gone"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/blueDarkSena"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idLayoutLoginName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/aqui35l"
+                        android:layout_width="265dp"
+                        android:layout_height="53dp"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line19"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/orangeSena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregunta35"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line19">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:backgroundTint="@color/blueDarkSena"
+                        android:text="@string/guardar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout15" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

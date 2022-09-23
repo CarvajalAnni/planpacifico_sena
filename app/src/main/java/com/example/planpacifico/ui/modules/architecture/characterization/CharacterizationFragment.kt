@@ -10,6 +10,7 @@ import androidx.core.app.ActivityCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.planpacifico.R
+import com.example.planpacifico.core.Constants.ID_ZONE
 import com.example.planpacifico.data.localdb.ArchitectureDataBase
 import com.example.planpacifico.data.models.entities.CharacterizationEntity
 import com.example.planpacifico.databinding.FragmentCharacterizationBinding
@@ -46,6 +47,7 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
     var res15: String? = null
     var res16: String? = null
     var res17: String? = null
+    var res18: String? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -55,7 +57,6 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
             LocationServices.getFusedLocationProviderClient(requireActivity())
         res9 = "votacion:"
         res10 = "financiación:"
-        res13 = "tendencia:"
         res15 = "riesgo:"
         res16 = "vivienda:"
         res17 = "familia:"
@@ -181,8 +182,17 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
                     res6 = binding.rbRes8pre6.text.toString()
                 }
 
-                res7 = binding.txtRes1pre7.text.toString()
-
+                if (binding.rbRes1pre7.isChecked) {
+                    res7 = binding.rbRes1pre7.text.toString()
+                } else if (binding.rbRes2pre7.isChecked) {
+                    res7 = binding.rbRes2pre7.text.toString()
+                } else if (binding.rbRes3pre7.isChecked) {
+                    res7 = binding.rbRes3pre7.text.toString()
+                } else if (binding.rbRes4pre7.isChecked) {
+                    res7 = binding.rbRes4pre7.text.toString()
+                } else if (binding.rbRes5pre7.isChecked) {
+                    res7 = binding.rbRes5pre7.text.toString()
+                }
 
                 if (binding.rbRes1pre8.isChecked) {
                     res8 = binding.rbRes1pre8.text.toString()
@@ -192,6 +202,8 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
                     res8 = binding.rbRes3pre8.text.toString()
                 } else if (binding.rbRes4pre8.isChecked) {
                     res8 = binding.rbRes4pre8.text.toString()
+                } else if (binding.rbRes5pre8.isChecked) {
+                    res8 = binding.rbRes5pre8.text.toString()
                 }
 
                 if (binding.chRes1pre9.isChecked) {
@@ -269,11 +281,48 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
                     res11 = binding.rbRes7pre11.text.toString()
                 } else if (binding.rbRes8pre11.isChecked) {
                     res11 = binding.rbRes8pre11.text.toString()
-                } else if (binding.rbRes9pre11.isChecked) {
-                    res11 = binding.txtRes9pre11.text.toString()
                 }
 
-                res12 = binding.txtRes1pre12.text.toString()
+
+                if (binding.chboxp3A.isChecked) {
+                    res12 = binding.chboxp3A.text.toString()
+                }
+                if (binding.chboxp3B.isChecked) {
+                    res12 = res12+ "," + binding.chboxp3B.text.toString()
+                }
+                if (binding.chboxp3C.isChecked) {
+                    res12 = res12+ "," + binding.chboxp3C.text.toString()
+                }
+                if (binding.chboxp3D.isChecked) {
+                    res12 = res12+ "," + binding.chboxp3D.text.toString()
+                }
+                if (binding.chboxp3E.isChecked) {
+                    res12 = res12+ "," + binding.chboxp3E.text.toString()
+                }
+                if (binding.chboxp3F.isChecked) {
+                    res12 = res12+ "," + binding.chboxp3F.text.toString()
+                }
+
+                if (binding.chboxp7A.isChecked) {
+                    res13 = binding.chboxp7A.text.toString()
+                }
+                if (binding.chboxp7B.isChecked) {
+                    res13 = res13+ "," + binding.chboxp7B.text.toString()
+                }
+                if (binding.chboxp7C.isChecked) {
+                    res13 = res13+ "," + binding.chboxp7C.text.toString()
+                }
+                if (binding.chboxp7D.isChecked) {
+                    res13 = res13+ "," + binding.chboxp7D.text.toString()
+                }
+                if (binding.chboxp7F.isChecked) {
+                    res13 = res13+ "," + binding.chboxp7F.text.toString()
+                }
+                if (binding.chboxp7G.isChecked) {
+                    res13 = res13+ "," + binding.chboxp7G.text.toString()
+                }
+
+                /*res12 = binding.txtRes1pre12.text.toString()
 
                 if (binding.chRes1pre13.isChecked) {
                     res13 = binding.chRes1pre13.text.toString()
@@ -307,7 +356,7 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
                     res14 = binding.rbRes1pre14.text.toString()
                 } else if (binding.rbRes2pre14.isChecked) {
                     res14 = binding.rbRes2pre14.text.toString()
-                }
+                }*/
 
                 if (binding.chRes1pre15.isChecked) {
                     res15 = binding.chRes1pre15.text.toString()
@@ -326,6 +375,9 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
                 }
                 if (binding.chRes6pre15.isChecked) {
                     res15 = res15+ "," + binding.txtRes6pre15.text.toString()
+                }
+                if (binding.chRes7pre15.isChecked) {
+                    res15 = res15+ "," + binding.chRes7pre15.text.toString()
                 }
 
                 if (binding.chRes1pre16.isChecked) {
@@ -387,12 +439,13 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
                     res17 = res17 + "," + "D Otros"
                 }
 
-
+                res18 = binding.txtRes1pre12.text.toString()
 
                 ArchitectureDataBase.getDatabase(requireContext()).CharacterizationDao()
                     .saveCharacterization(
                         CharacterizationEntity(
                             0,
+                            ID_ZONE,
                             nameuser.toString(),
                             reslenght.toString(),
                             reslatitude.toString(),
@@ -412,10 +465,10 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
                             res11.toString(),
                             res12.toString(),
                             res13.toString(),
-                            res14.toString(),
                             res15.toString(),
                             res16.toString(),
-                            res17.toString()
+                            res17.toString(),
+                            res18.toString()
                         )
                     )
 
@@ -450,20 +503,6 @@ class CharacterizationFragment : Fragment(R.layout.fragment_characterization) {
                 binding.txRes10pre10.visibility = View.VISIBLE
             } else {
                 binding.txRes10pre10.visibility = View.GONE
-            }
-        }
-        binding.rbRes9pre11.setOnClickListener {
-            if (binding.rbRes9pre11.isChecked) {
-                binding.txRes9pre11.visibility = View.VISIBLE
-            } else {
-                binding.txRes9pre11.visibility = View.GONE
-            }
-        }
-        binding.chRes9pre13.setOnClickListener {
-            if (binding.chRes9pre13.isChecked) {
-                binding.txRes9pre13.visibility = View.VISIBLE
-            } else {
-                binding.txRes9pre13.visibility = View.GONE
             }
         }
         binding.chRes6pre15.setOnClickListener {

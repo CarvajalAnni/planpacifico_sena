@@ -11,9 +11,11 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.planpacifico.R
+import com.example.planpacifico.core.Constants.ID_ZONE
 import com.example.planpacifico.core.hide
 import com.example.planpacifico.core.show
 import com.example.planpacifico.data.localdb.AppDatabase
+import com.example.planpacifico.data.models.entities.PopulationAndPopulatedCenterAndMunicipality
 import com.example.planpacifico.data.rest.RetrofitClient
 import com.example.planpacifico.databinding.FragmentZonesMenuBinding
 import com.example.planpacifico.domain.populations.PopulationsRepoImpl
@@ -49,15 +51,17 @@ class ZonesMenuFragment : Fragment(R.layout.fragment_zones_menu) {
                     when(it){
                         is Result.Loading -> {}
                         is Result.Success -> {
-                            if(it.data.isNullOrEmpty()){
+                            if (it.data.isNullOrEmpty()) {
                                 binding.noData.show()
                                 binding.rvPopulation.hide()
-                            }else{
+                            } else {
                                 binding.noData.hide()
                                 binding.rvPopulation.show()
                             }
-                            val adapter = ZonesMenuAdapter(it.data,viewModelPopulation,requireContext())
-                            binding.rvPopulation.layoutManager = GridLayoutManager(requireContext(),3)
+                            val adapter =
+                                ZonesMenuAdapter(it.data, viewModelPopulation, requireContext())
+                            binding.rvPopulation.layoutManager =
+                                GridLayoutManager(requireContext(), 3)
                             binding.rvPopulation.adapter = adapter
                         }
                         is Result.Failure -> {

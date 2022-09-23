@@ -1,5 +1,6 @@
 package com.example.planpacifico.data.models.entities
 
+
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -7,6 +8,7 @@ import androidx.room.PrimaryKey
 data class CharacterizationEntity (
     @PrimaryKey(autoGenerate = true)
     val id_arquitectura_caracterizacion : Int,
+    val zone_id : Int?,
     var name_user : String,
     var lenght : String,
     var latitude : String,
@@ -26,10 +28,10 @@ data class CharacterizationEntity (
     var pregunta11 : String,
     var pregunta12 : String,
     var pregunta13 : String,
-    var pregunta14 : String,
     var pregunta15 : String,
     var pregunta16 : String,
     var pregunta17 : String,
+    var pregunta18 : String
 
 )
 

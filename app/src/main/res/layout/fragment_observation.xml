@@ -939,7 +939,6 @@
                         android:text="Cria de animales"/>
 
                 </LinearLayout>
-
                 <LinearLayout
                     android:id="@+id/lnAnswer3CD"
                     android:layout_width="match_parent"
@@ -964,7 +963,6 @@
                         android:text="Cultivos de plantas medicinales"/>
 
                 </LinearLayout>
-
                 <LinearLayout
                     android:id="@+id/lnAnswer3EF"
                     android:layout_width="match_parent"
@@ -989,7 +987,6 @@
                         android:text="No tienen uso exclusivo "/>
 
                 </LinearLayout>
-
             </LinearLayout>
 
             <View

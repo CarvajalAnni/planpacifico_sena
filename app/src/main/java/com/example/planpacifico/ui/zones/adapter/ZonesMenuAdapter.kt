@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.planpacifico.R
+import com.example.planpacifico.core.Constants.ID_ZONE
 import com.example.planpacifico.core.hide
 import com.example.planpacifico.core.show
 import com.example.planpacifico.data.models.entities.PopulationAndPopulatedCenterAndMunicipality
@@ -89,6 +90,7 @@ class ZonesMenuAdapter(
                                         "Eliminado correctamente",
                                         Snackbar.LENGTH_SHORT
                                     ).show()
+                                    ID_ZONE = population.id_population
                                     Navigation.findNavController(binding.root).navigate(R.id.action_zonesMenuFragment_self)
                                 }
                                 is Result.Failure -> {

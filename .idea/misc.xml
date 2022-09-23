@@ -11,11 +11,19 @@
         <entry key="..\:/Users/Aprendiz/AndroidStudioProjects/plan_pacifico/app/src/main/res/layout/fragment_characterize2.xml" value="0.3625" />
         <entry key="..\:/Users/Aprendiz/AndroidStudioProjects/plan_pacifico/app/src/main/res/layout/fragment_menu_models.xml" value="0.3625" />
         <entry key="..\:/Users/Aprendiz/AndroidStudioProjects/plan_pacifico/app/src/main/res/layout/fragment_observation.xml" value="0.1372126436781609" />
+<<<<<<< HEAD
         <entry key="..\:/Users/SENA/AndroidStudioProjects/planpacifico_sena/app/src/main/res/layout/fragment_analyze_water.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SENA/AndroidStudioProjects/planpacifico_sena/app/src/main/res/layout/fragment_characterization.xml" value="0.33" />
         <entry key="..\:/Users/SENA/AndroidStudioProjects/planpacifico_sena/app/src/main/res/layout/fragment_observation.xml" value="0.11203200914547014" />
         <entry key="..\:/Users/SENA/AndroidStudioProjects/planpacifico_sena/app/src/main/res/layout/fragment_zones_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SENA/AndroidStudioProjects/planpacifico_sena/app/src/main/res/layout/item_menu_zones.xml" value="0.20416666666666666" />
+=======
+        <entry key="..\:/Users/Aprendiz/Desktop/plan_pacifico/app/src/main/res/layout/fragment_observatiion.xml" value="0.25" />
+        <entry key="..\:/Users/Aprendiz/Desktop/plan_pacifico/app/src/main/res/layout/fragment_observation.xml" value="0.18177083333333333" />
+        <entry key="..\:/Users/Aprendiz/Desktop/plan_pacifico/app/src/main/res/layout/fragment_zones_form_create.xml" value="0.3625" />
+        <entry key="..\:/Users/Aprendiz/Desktop/plan_pacifico/app/src/main/res/layout/fragment_zones_form_update.xml" value="0.3625" />
+        <entry key="..\:/Users/Aprendiz/Desktop/plan_pacifico/app/src/main/res/layout/fragment_zones_menu.xml" value="0.3194444444444444" />
+>>>>>>> 9e8838a15e210e5a65190727b9c3d459a64db759
         <entry key="app/src/main/res/drawable-v24/ic_baseline_close_24.xml" value="0.2645" />
         <entry key="app/src/main/res/drawable-v24/ic_close_red.xml" value="0.2835" />
         <entry key="app/src/main/res/drawable-v24/ic_delete.xml" value="0.2835" />

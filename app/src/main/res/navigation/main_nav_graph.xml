@@ -73,8 +73,8 @@
             android:id="@+id/action_architectureModuleFragment_to_characterizationFragment"
             app:destination="@id/characterizationFragment" />
         <action
-            android:id="@+id/action_architectureModuleFragment_to_observationFragment"
-            app:destination="@id/observationFragment" />
+            android:id="@+id/action_architectureModuleFragment_to_observatiionFragment"
+            app:destination="@id/observatiionFragment" />
     </fragment>
     <fragment
         android:id="@+id/characterizationFragment"
@@ -86,20 +86,20 @@
             app:destination="@id/characterizeFragment2" />
     </fragment>
     <fragment
-        android:id="@+id/observationFragment"
-        android:name="com.example.planpacifico.ui.modules.architecture.observation.ObservationFragment"
-        android:label="fragment_observation"
-        tools:layout="@layout/fragment_observation" >
-        <action
-            android:id="@+id/action_observationFragment_to_menuModelsFragment"
-            app:destination="@id/menuModelsFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/characterizeFragment2"
         android:name="com.example.planpacifico.ui.modules.architecture.characterization.CharacterizeFragment2"
         android:label="CharacterizeFragment2" >
         <action
             android:id="@+id/action_characterizeFragment2_to_menuModelsFragment"
+            app:destination="@id/menuModelsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/observatiionFragment"
+        android:name="com.example.planpacifico.ui.modules.architecture.observation.ObservatiionFragment"
+        android:label="fragment_observatiion"
+        tools:layout="@layout/fragment_observatiion" >
+        <action
+            android:id="@+id/action_observatiionFragment_to_menuModelsFragment"
             app:destination="@id/menuModelsFragment" />
     </fragment>
 </navigation>

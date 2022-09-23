@@ -107,18 +107,24 @@
     <string name="patio">Patio</string>
     <string name="azotea">Azotea (Huerta Trasera)</string>
     <string name="soberado">Soberado (Espacio entre \nla cubierta y el cielorraso</string>
+
     <string name="observationp3">12. El patio es usado para:</string>
-    <string name="observationp4">4. Los espacios para dormir son divididos con:</string>
-    <string name="observationp5">5. La cocina se encuentra:</string>
-    <string name="observationp6">6. El baño se encuentra:</string>
     <string name="observationp7">13. El tipo de baño que se utiliza en la vivienda es:</string>
-    <string name="observationp8">8. La vivienda cuenta con:</string>
-    <string name="observationp9">9. El piso de la vivienda es:</string>
-    <string name="observationp10">10. El techo de la vivienda es:</string>
-    <string name="observationp11">11. Qué tipo de material poseen las paredes exteriores de la vivienda:</string>
-    <string name="observationp12">12. Qué tipo de acabado tienen las fachadas de la vivienda:</string>
-    <string name="observationp13">13. Las viviendas se organizan en:</string>
-    <string name="observationp14">14. Accesibilidad /Vías terrestres:</string>
+
+    <string name="observationp4">3. Los espacios para dormir son divididos con:</string>
+    <string name="observationp5">4. La cocina se encuentra:</string>
+    <string name="observationp6">5. El baño se encuentra:</string>
+    <string name="observationp8">6. La vivienda cuenta con:</string>
+    <string name="observationp9">7. El piso de la vivienda es:</string>
+    <string name="observationp10">8. El techo de la vivienda es:</string>
+    <string name="observationp11">9. Qué tipo de material poseen las paredes exteriores de la vivienda:</string>
+    <string name="observationp12">10. Qué tipo de acabado tienen las fachadas de la vivienda:</string>
+    <string name="observationp13">11. Las viviendas se organizan en:</string>
+    <string name="observationp14">12. Accesibilidad /Vías terrestres:</string>
+    <string name="observationp15">13. Hace cuanto tiempo (años) reside en la vivienda</string>
+    <string name="observationp16">14. Tipo de tendencia de la vivienda:</string>
+    <string name="observationp17">15. La Vivienda se encuentra en espacios de alto riesgo</string>
+    <string name="observationp18">16. Notas para Observaciones</string>
     <string name="observation_form">Instrumento de Observacion sobre caracterización del perfil sociocultural de las comunidades Negras de la zona rural del litoral pacífico</string>
 
     <string name="observaci_n">Observación</string>

@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.android.parcel.Parcelize
 
-@Parcelize
+
 @Entity
 data class ObservationEntity (
     @PrimaryKey(autoGenerate = true)
@@ -26,5 +26,7 @@ data class ObservationEntity (
     var pregunta12 : String,
     var pregunta13 : String,
     var pregunta14 : String,
+    var pregunta15 : String,
+    var pregunta16 : String,
 
-    ): Parcelable
+    )

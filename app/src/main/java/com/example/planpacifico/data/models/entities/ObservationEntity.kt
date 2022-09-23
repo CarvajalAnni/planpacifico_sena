@@ -29,5 +29,4 @@ data class ObservationEntity (
     var pregunta15 : String,
     var pregunta16 : String,
 
-
     )

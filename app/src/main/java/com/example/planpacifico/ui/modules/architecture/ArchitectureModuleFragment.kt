@@ -24,7 +24,7 @@ class ArchitectureModuleFragment : Fragment(R.layout.fragment_architecture_modul
         }
 
         binding.cardObser.setOnClickListener {
-            findNavController().navigate(R.id.action_architectureModuleFragment_to_observationFragment)
+            findNavController().navigate(R.id.action_architectureModuleFragment_to_observatiionFragment)
         }
 
     }
